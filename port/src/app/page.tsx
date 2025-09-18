@@ -207,13 +207,27 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-6 text-center">Known Tech</h2>
         <div className="flex flex-wrap gap-4 justify-center">
           <Badge>React</Badge>
-          <Badge>TypeScript</Badge>
-          <Badge>Node.js</Badge>
-          <Badge>Tailwind CSS</Badge>
-          <Badge>Next.js</Badge>
-          <Badge>AWS</Badge>
-          <Badge>Serverless</Badge>
-          <Badge>Python</Badge>
+<Badge>TypeScript</Badge>
+<Badge>Node.js</Badge>
+<Badge>Tailwind CSS</Badge>
+<Badge>Next.js</Badge>
+<Badge>AWS</Badge>
+<Badge>Serverless</Badge>
+<Badge>Python</Badge>
+<Badge>Amazon DynamoDB</Badge>
+<Badge>PostgreSQL</Badge>
+<Badge>Shadcn/UI</Badge>
+<Badge>Zustand</Badge>
+<Badge>Scikit-learn</Badge>
+<Badge>Streamlit</Badge>
+<Badge>WebRTC</Badge>
+<Badge>WebSockets</Badge>
+<Badge>Jest</Badge>
+<Badge>Zod</Badge>
+<Badge>JSON</Badge>
+<Badge>Docker</Badge>
+<Badge>Git</Badge>
+
         </div>
       </section>
 
