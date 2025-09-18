@@ -134,7 +134,7 @@ export default function Home() {
           {/* Google Docs Clone Card */}
           <Card className="flex flex-col h-[500px] bg-card text-card-foreground contain-content overflow-hidden p-0">
             <div className="relative w-full h-[200px] flex-shrink-0">
-              <Image src="/docs.png" alt="Google Docs Clone" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
+              <Image src="/Docs.png" alt="Google Docs Clone" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
             </div>
             <div className="flex flex-col flex-1 p-6">
               <div className="text-center mb-1">
