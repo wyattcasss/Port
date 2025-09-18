@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client" 
 import React from 'react';
 import { Button } from '../components/ui/button';
@@ -130,16 +131,19 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-4 mb-16">
         <h2 className="text-3xl font-semibold mb-6">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* WinLoss Predictor Card */}
-          <Card className="flex flex-col h-[420px] bg-card text-card-foreground contain-content overflow-hidden p-0">
-            <div className="relative w-full h-[200px]">
-              <Image src="/docs.png" alt="WinLoss Predictor" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
+          {/* Google Docs Clone Card */}
+          <Card className="flex flex-col h-[500px] bg-card text-card-foreground contain-content overflow-hidden p-0">
+            <div className="relative w-full h-[200px] flex-shrink-0">
+              <Image src="/docs.png" alt="Google Docs Clone" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
             </div>
-            <CardContent className="flex-1 flex flex-col justify-center items-center text-center p-6">
-              <CardTitle className="mb-2">Google Docs Clone</CardTitle>
-              
-              <CardDescription className="mb-4">A web app for predicting win/loss outcomes using ML models.</CardDescription>
-               <div className="flex gap-2 justify-center mt-4">
+            <div className="flex flex-col flex-1 p-6">
+              <div className="text-center mb-1">
+                <CardTitle className="mb-0 h-12 flex items-center justify-center">Google Docs Clone</CardTitle>
+              </div>
+              <div className="flex-1 flex items-center justify-center">
+                <CardDescription className="text-center h-20 flex items-center">Built a full-stack collaborative document editor with Next.js, integrating Liveblocks for real-time collaboration and Convex for serverless backend, delivering rich text editing with live cursors, comments, and multi-user document management.Retry</CardDescription>
+              </div>
+              <div className="flex gap-2 justify-center mt-4 flex-shrink-0">
                 <Button variant="default" size="sm" asChild>
                   <a href="https://github.com/wyattcasss/GoogleDocs" target="_blank" rel="noopener">Code</a>
                 </Button>
@@ -147,17 +151,22 @@ export default function Home() {
                   <a href="https://docs-sigma-five.vercel.app/" target="_blank" rel="noopener">Live</a>
                 </Button>
               </div>
-            </CardContent>
-          </Card>
-          {/* Game Project Card */}
-          <Card className="flex flex-col h-[420px] bg-card text-card-foreground contain-content overflow-hidden p-0">
-            <div className="relative w-full h-[200px]">
-              <Image src="/preppy.png" alt="WinLoss Predictor" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
             </div>
-            <CardContent className="flex-1 flex flex-col justify-center items-center text-center p-6">
-              <CardTitle className="mb-2">Ai Interview Prep</CardTitle>
-              <CardDescription className="mb-4">A multiplayer game built with React and Node.js.</CardDescription>
-              <div className="flex gap-2 justify-center mt-4">
+          </Card>
+          
+          {/* AI Interview Prep Card */}
+          <Card className="flex flex-col h-[500px] bg-card text-card-foreground contain-content overflow-hidden p-0">
+            <div className="relative w-full h-[200px] flex-shrink-0">
+              <Image src="/preppy.png" alt="AI Interview Prep" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
+            </div>
+            <div className="flex flex-col flex-1 p-6">
+              <div className="text-center mb-1">
+                <CardTitle className="mb-0 h-12 flex items-center justify-center">AI Interview Prep</CardTitle>
+              </div>
+              <div className="flex-1 flex items-center justify-center">
+                <CardDescription className="text-center h-20 flex items-center">Built a full-stack interview preparation platform with Next.js, integrating Hume AI for voice-powered mock interviews and PostgreSQL with Drizzle ORM to deliver personalized practice sessions and real-time feedback generation.</CardDescription>
+              </div>
+              <div className="flex gap-2 justify-center mt-4 flex-shrink-0">
                 <Button variant="default" size="sm" asChild>
                   <a href="https://github.com/wyattcasss/Aiprep" target="_blank" rel="noopener">Code</a>
                 </Button>
@@ -165,17 +174,22 @@ export default function Home() {
                   <a href="https://youtu.be/XxJ3IdeAFRA" target="_blank" rel="noopener">Live</a>
                 </Button>
               </div>
-            </CardContent>
-          </Card>
-          {/* Social Platform Card */}
-          <Card className="flex flex-col h-[420px] bg-card text-card-foreground contain-content overflow-hidden p-0">
-            <div className="relative w-full h-[200px]">
-              <Image src="/valml.png" alt="WinLoss Predictor" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
             </div>
-            <CardContent className="flex-1 flex flex-col justify-center items-center text-center p-6">
-              <CardTitle className="mb-2">Valorant Match Predictor</CardTitle>
-              <CardDescription className="mb-4">A social media platform for sharing and connecting.</CardDescription>
-              <div className="flex gap-2 justify-center mt-4">
+          </Card>
+          
+          {/* Valorant Match Predictor Card */}
+          <Card className="flex flex-col h-[500px] bg-card text-card-foreground contain-content overflow-hidden p-0">
+            <div className="relative w-full h-[200px] flex-shrink-0">
+              <Image src="/valml.png" alt="Valorant Match Predictor" width={500} height={200} style={{objectFit: 'cover', width: '100%', height: '100%', display: 'block'}} />
+            </div>
+            <div className="flex flex-col flex-1 p-6">
+              <div className="text-center mb-1">
+                <CardTitle className="mb-0 h-12 flex items-center justify-center">Valorant Match Predictor</CardTitle>
+              </div>
+              <div className="flex-1 flex items-center justify-center">
+                <CardDescription className="text-center h-20 flex items-center">Built a RandomForest model with data preprocessing and Streamlit interface for match predictions, using scikit-learn algorithms to process game statistics and generate automated win/loss classifications with confidence scoring.</CardDescription>
+              </div>
+              <div className="flex gap-2 justify-center mt-4 flex-shrink-0">
                 <Button variant="default" size="sm" asChild>
                   <a href="https://github.com/wyattcasss/ValorantML" target="_blank" rel="noopener">Code</a>
                 </Button>
@@ -183,7 +197,7 @@ export default function Home() {
                   <a href="https://valorantpredict.streamlit.app/" target="_blank" rel="noopener">Live</a>
                 </Button>
               </div>
-            </CardContent>
+            </div>
           </Card>
         </div>
       </section>
